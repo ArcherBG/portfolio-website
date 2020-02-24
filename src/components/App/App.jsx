@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import { Button } from "react-bootstrap";
+import Features from "../Features/Features";
 
 const StyledApp = styled.div`
   height: 100%;
@@ -33,9 +34,15 @@ function App() {
   return (
     <StyledApp>
       <BackgroundImage />
-      App
-      <Button variant="primary">Bootstrap Primary Button</Button>
-      <StyledButton variant="primary">Modified Bootstrap Button</StyledButton>
+      <Features />
+
+
+      {/* <section>
+        Contacts
+        <Button variant="primary">Bootstrap Primary Button</Button>
+        <StyledButton variant="primary">Modified Bootstrap Button</StyledButton>
+      </section> */}
+
     </StyledApp>
   );
 }
