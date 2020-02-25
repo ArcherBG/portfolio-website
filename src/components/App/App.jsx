@@ -3,9 +3,11 @@ import styled, { css } from "styled-components";
 import { Container, Col, Button, Row } from "react-bootstrap";
 import Features from "../Features/Features";
 import Gallery from "../Gallery/Gallery";
+import Services from "../Services/Services";
 
 const StyledApp = styled.div`
   height: 100%;
+  min-width: 400px;
   background-color: #f6f8fa;
 `;
 
@@ -31,11 +33,19 @@ const StyledButton = styled(Button)`
     `};
 `;
 
+const StyledServicesWrapper = styled.div`
+    background-color: #343a40;
+`;
+
 function App() {
   return (
     <StyledApp>
       <BackgroundImage />
       <Features />
+      <StyledServicesWrapper>
+      <Services />
+      </StyledServicesWrapper>
+
       <Container>
         <Row>
           <Col>

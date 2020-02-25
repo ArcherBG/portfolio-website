@@ -9,7 +9,6 @@ const CarouselImage = styled.img`
 function Gallery() {
   return (
     <Carousel>
-
       <Carousel.Item>
         <CarouselImage
           className="d-block w-100"
