@@ -1,7 +1,8 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { Button } from "react-bootstrap";
+import { Container, Col, Button, Row } from "react-bootstrap";
 import Features from "../Features/Features";
+import Gallery from "../Gallery/Gallery";
 
 const StyledApp = styled.div`
   height: 100%;
@@ -35,6 +36,13 @@ function App() {
     <StyledApp>
       <BackgroundImage />
       <Features />
+      <Container>
+        <Row>
+          <Col>
+            <Gallery />
+          </Col>
+        </Row>
+      </Container>
 
 
       {/* <section>
