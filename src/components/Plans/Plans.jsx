@@ -135,7 +135,7 @@ function Plans() {
               </tr>
               <tr>
                 <td>
-                  <Centered><Button>Prmium</Button></Centered>
+                  <Centered><Button>Premium</Button></Centered>
                 </td>
               </tr>
             </tbody>
