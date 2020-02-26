@@ -5,6 +5,7 @@ import Features from "../Features/Features";
 import Gallery from "../Gallery/Gallery";
 import Services from "../Services/Services";
 import Plans from "../Plans/Plans";
+import Contacts from "../Contacts/Contacts";
 
 const StyledApp = styled.div`
   height: 100%;
@@ -47,7 +48,7 @@ function App() {
         <Services />
       </StyledServicesWrapper>
       <Plans />
-
+      <Contacts />
       <Container>
         <Row>
           <Col>
