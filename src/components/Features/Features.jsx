@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
+import SegmentHeading from "../SegmentHeading/SegmentHeading";
 
 const CustomRow = styled(Row)`
   margin: 2rem 0;
@@ -51,10 +52,7 @@ function Features() {
     <Container>
       <Row>
         <CustomCol>
-          <Heading>Key Features</Heading>
-          <Centered>
-            <Separator></Separator>
-          </Centered>
+          <SegmentHeading>Key Features</SegmentHeading>
           <CustomRow>
             <CustomCol sm={3}>
               <Centered>

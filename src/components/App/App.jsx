@@ -4,6 +4,7 @@ import { Container, Col, Button, Row } from "react-bootstrap";
 import Features from "../Features/Features";
 import Gallery from "../Gallery/Gallery";
 import Services from "../Services/Services";
+import Plans from "../Plans/Plans";
 
 const StyledApp = styled.div`
   height: 100%;
@@ -43,8 +44,9 @@ function App() {
       <BackgroundImage />
       <Features />
       <StyledServicesWrapper>
-      <Services />
+        <Services />
       </StyledServicesWrapper>
+      <Plans />
 
       <Container>
         <Row>
