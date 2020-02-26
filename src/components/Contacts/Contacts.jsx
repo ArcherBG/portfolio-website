@@ -24,6 +24,9 @@ const ColoredIcon = styled.i`
 `;
 
 const StyledContactInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--main-text-color);
   font-weight: 600;
 `;
@@ -46,6 +49,7 @@ function Contacts() {
               aria-hidden="true"
             />
             <StyledContactInfo>
+              <div>Phone</div>
               <a href="tel:15551234789">+1 555-1234-789</a>
             </StyledContactInfo>
           </Centered>
@@ -54,6 +58,7 @@ function Contacts() {
           <Centered>
             <ColoredIcon className="fa fa-whatsapp fa-4x" aria-hidden="true" />
             <StyledContactInfo>
+              <div>WhatsApp</div>
               <a href="tel:15551234789">+1 555-1234-789</a>
             </StyledContactInfo>
           </Centered>
@@ -62,6 +67,7 @@ function Contacts() {
           <Centered>
             <ColoredIcon className="fa fa-skype fa-4x" aria-hidden="true" />
             <StyledContactInfo>
+              <div>Skype</div>
               <a href="tel:15551234789">+1 555-1234-789</a>
             </StyledContactInfo>
           </Centered>
@@ -70,6 +76,7 @@ function Contacts() {
           <Centered>
             <ColoredIcon className="fa fa-envelope fa-4x" aria-hidden="true" />
             <StyledContactInfo>
+              <div>Email</div>
               <a href="mailTo:support@example.com?subject=[Feedback%20from%20website]">
                 support@example.com
               </a>
