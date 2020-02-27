@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import SegmentHeading from "../SegmentHeading/SegmentHeading";
 
 const StyledContainer = styled(Container)`
-  margin: 1rem auto;
+  margin: 2rem auto 1rem;
 `;
 
 const StyledSubTitle = styled.h5`
