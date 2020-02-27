@@ -6,6 +6,7 @@ import Gallery from "../Gallery/Gallery";
 import Services from "../Services/Services";
 import Plans from "../Plans/Plans";
 import Contacts from "../Contacts/Contacts";
+import Reviews from "../Reviews/Reviews";
 
 const StyledApp = styled.div`
   height: 100%;
@@ -49,6 +50,7 @@ function App() {
       </StyledServicesWrapper>
       <Plans />
       <Contacts />
+      <Reviews />
       <Container>
         <Row>
           <Col>
