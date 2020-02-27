@@ -7,6 +7,7 @@ import Services from "../Services/Services";
 import Plans from "../Plans/Plans";
 import Contacts from "../Contacts/Contacts";
 import Reviews from "../Reviews/Reviews";
+import Footer from "../Footer/Footer";
 
 const StyledApp = styled.div`
   height: 100%;
@@ -37,7 +38,7 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledServicesWrapper = styled.div`
-    background-color: #343a40;
+  background-color: #343a40;
 `;
 
 function App() {
@@ -48,24 +49,13 @@ function App() {
       <StyledServicesWrapper>
         <Services />
       </StyledServicesWrapper>
+      <Gallery />
       <Plans />
+      <StyledServicesWrapper>
+        <Reviews />
+      </StyledServicesWrapper>
       <Contacts />
-      <Reviews />
-      <Container>
-        <Row>
-          <Col>
-            <Gallery />
-          </Col>
-        </Row>
-      </Container>
-
-
-      {/* <section>
-        Contacts
-        <Button variant="primary">Bootstrap Primary Button</Button>
-        <StyledButton variant="primary">Modified Bootstrap Button</StyledButton>
-      </section> */}
-
+      <Footer />
     </StyledApp>
   );
 }
