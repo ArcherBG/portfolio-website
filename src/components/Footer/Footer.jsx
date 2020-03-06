@@ -10,13 +10,6 @@ const StyledFooter = styled.div`
   font-size: 0.8rem;
 `;
 
-const ContentWrapper = styled(Row)`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-`;
-
 function Footer() {
   const date = new Date();
   const year = date.getFullYear();

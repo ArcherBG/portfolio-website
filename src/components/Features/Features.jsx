@@ -11,22 +11,10 @@ const CustomCol = styled(Col)`
   margin: 1rem 0;
 `;
 
-const Heading = styled.h2`
-  text-align: center;
-  color: var(--main-color);
-  margin-top: 1rem;
-`;
-
 const Centered = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-
-const Separator = styled.div`
-  border: 2px solid var(--main-color);
-  width: 190px;
-  height: 2px;
 `;
 
 const Title = styled.h4`

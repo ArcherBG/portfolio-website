@@ -1,18 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Card, Table, Button } from "react-bootstrap";
+import { Container, Row, Col, Table, Button } from "react-bootstrap";
 import styled from "styled-components";
 import SegmentHeading from "../SegmentHeading/SegmentHeading";
-
-const StyledPriceWrapper = styled.div`
-  height: 100px;
-`;
-
-const StyledPrice = styled.div`
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: yellow;
-`;
 
 const StyledContainer = styled(Container)`
   margin: 2rem auto;
