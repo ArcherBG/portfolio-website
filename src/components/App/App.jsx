@@ -1,13 +1,15 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import { Container, Col, Button, Row } from "react-bootstrap";
-import Features from "../Features/Features";
-import Gallery from "../Gallery/Gallery";
-import Services from "../Services/Services";
-import Plans from "../Plans/Plans";
-import Contacts from "../Contacts/Contacts";
-import Reviews from "../Reviews/Reviews";
-import Footer from "../Footer/Footer";
+import React from 'react';
+import styled, { css } from 'styled-components';
+import { Button } from 'react-bootstrap';
+import Features from '../Features/Features';
+import Gallery from '../Gallery/Gallery';
+import Services from '../Services/Services';
+import Plans from '../Plans/Plans';
+import Contacts from '../Contacts/Contacts';
+import Reviews from '../Reviews/Reviews';
+import Footer from '../Footer/Footer';
+import NavigationBar from '../NavigationBar/NavigationBar';
+import { HashRouter } from 'react-router-dom';
 
 const StyledApp = styled.div`
   height: 100%;
@@ -22,41 +24,37 @@ const BackgroundImage = styled.div`
   height: 35rem;
 `;
 
-const StyledButton = styled(Button)`
-  border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: palevioletred;
-  margin: 0 1em;
-  padding: 0.25em 1em;
-
-  ${props =>
-    props.primary &&
-    css`
-      background: palevioletred;
-      color: white;
-    `};
-`;
-
 const StyledServicesWrapper = styled.div`
   background-color: #343a40;
 `;
 
 function App() {
   return (
-    <StyledApp>
-      <BackgroundImage />
-      <Features />
-      <StyledServicesWrapper>
-        <Services />
-      </StyledServicesWrapper>
-      <Gallery />
-      <Plans />
-      <StyledServicesWrapper>
-        <Reviews />
-      </StyledServicesWrapper>
-      <Contacts />
-      <Footer />
-    </StyledApp>
+    <HashRouter>
+      <StyledApp>
+        <NavigationBar />
+        <BackgroundImage />
+        <div id="features">
+          <Features />
+        </div>
+        <StyledServicesWrapper id="services">
+          <Services />
+        </StyledServicesWrapper>
+        <div id="gallery">
+          <Gallery />
+        </div>
+        <div id="plans">
+          <Plans />{' '}
+        </div>
+        <StyledServicesWrapper id="reviews">
+          <Reviews />
+        </StyledServicesWrapper>
+        <div id="contacts">
+          <Contacts />
+        </div>
+        <Footer />
+      </StyledApp>
+    </HashRouter>
   );
 }
 
